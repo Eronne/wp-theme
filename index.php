@@ -1,6 +1,7 @@
+<!-- todo: page 8 -->
 <?php get_header(); ?> <!-- Appel de l'en-tête (fichier header.php) -->
 
-<main id="articles">
+<main id="articles" class="unit-70">
     <?php if(have_posts()) : ?>
         <?php while(have_posts()) : the_post(); ?>
             <article>
@@ -17,5 +18,8 @@
     <?php endif; ?>
 </main>
 
-<?php get_sidebar(); ?> <!-- Appel de la sidebar (fichier sidebar.php) -->
+<aside class="unit-30">
+    <?php get_sidebar(); ?> <!-- Appel de la sidebar (fichier sidebar.php) -->
+</aside>
+
 <?php get_footer(); ?> <!-- Appel du pied de page (fichier footer.php) -->

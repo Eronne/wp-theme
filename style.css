@@ -4,3 +4,138 @@ Author: Eronne
 Description: A simple and beautiful Wordpress theme.
 Version: 0.1
 */
+
+
+
+
+
+/***** GENERAL *****/
+.clearfix:after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+/* Mise en page des lignes */
+.units-row{
+    max-width: 960px;
+    padding: 0 15px;
+    margin: 0 auto 1.5rem auto;
+}
+
+/* Style de l'entête */
+body > header h1{
+    margin: 1em auto;
+}
+
+body > header h1 a{
+    text-decoration: none;
+}
+
+
+
+
+
+/***** HEADER *****/
+/* Barres des menus */
+.menu{
+    background-color: #3498db;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu a{
+    display: block;
+    color: #ecf0f1;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover{
+    color: #7f8c8d;
+    background-color: #ecf0f1;
+}
+
+
+
+
+
+/***** ARTICLE SEUL *****/
+.screen-reader-text{
+    display: none;
+}
+
+.single article header{
+    border: 3px solid #3498db;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 20px;
+}
+
+.single article header .wp-post-image{
+    margin-bottom: 20px;
+}
+
+.single article header .auteur{
+    font-size: 0.75rem;
+    margin-bottom: 0;
+}
+
+article .meta{
+    border-top: 3px solid #3498db;
+    font-size: 0.75rem;
+    padding-top: 5px;
+}
+
+article .navigation{
+    background-color: #3498db;
+    padding: 5px 10px;
+}
+
+.navigation .nav-previous, .navigation .nav-next{
+    text-align: center;
+    width: 45%;
+}
+
+.navigation .nav-previous{
+    float: left;
+}
+
+.navigation .nav-previous:before{
+    content: '\2190';
+    margin-right: 8px;
+}
+
+.navigation .nav-next{
+    float: right;
+}
+
+.navigation .nav-next:after{
+    content: ' \2192';
+    margin-left: 8px;
+}
+
+
+
+
+
+/***** FOOTER *****/
+nav.piedpage ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.copyright{
+    border-top: 5px solid #3498db;
+    font-size: 0.7rem;
+    text-align: center;
+}
