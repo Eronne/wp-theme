@@ -1,20 +1,14 @@
-<!-- todo: page 3 : "Le fichier home.php" -->
 <?php get_header(); ?> <!-- Appel de l'en-tête (fichier header.php) -->
 
-<main id="articles" class="unit-70">
+<main class="unit-70">
     <?php if(have_posts()) : ?>
-        <?php while(have_posts()) : the_post(); ?>
+        <?php the_post(); ?>
             <article>
-                <header class="titre-article">
-                    <h2>
-                        <a href="<?php the_permalink(); ?>">
-                            <?php the_title(); ?>
-                        </a>
-                    </h2>
+                <header class="titre-page">
+                    <h1><?php the_title() ?></h1>
                 </header>
                 <?php the_content(); ?>
             </article>
-        <?php endwhile; ?>
     <?php endif; ?>
 </main>
 

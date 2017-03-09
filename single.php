@@ -14,6 +14,16 @@
             <?php the_content(); ?>
             <div class="meta">
                 <p class="metadata">Publié le : <?php the_date(); ?></p>
+
+                <div class="categories">
+                    <p>Catégories : <?php the_category(); ?></p>
+                </div>
+
+                <div class="auteur">
+                    <p>Ecrit par : <?php the_author_posts_link(); ?></p>
+                </div>
+
+                <?php edit_post_link(); ?>
             </div>
 
             <div class="navigation clearfix">
