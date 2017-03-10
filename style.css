@@ -123,6 +123,10 @@ article .navigation{
     margin-left: 8px;
 }
 
+.nav-links .page-numbers{
+    display: inline-block;
+}
+
 
 
 
