@@ -2,6 +2,8 @@
 <?php get_header(); ?> <!-- Appel de l'en-tête (fichier header.php) -->
 
 <main id="articles" class="unit-70">
+    <h1><?php echo get_the_title(get_option('page_for_posts')); ?></h1>
+
     <?php if(have_posts()) : ?>
         <?php while(have_posts()) : the_post(); ?>
             <article>
