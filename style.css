@@ -1,7 +1,7 @@
 /*
-Theme Name: A wordpress theme
+Theme Name: DesignCo
 Author: Eronne
-Description: A simple and beautiful Wordpress theme.
+Description: A simple and beautiful Wordpress theme for DesignCo.
 Version: 0.1
 */
 
@@ -10,6 +10,10 @@ Version: 0.1
 
 
 /***** GENERAL *****/
+body{
+    margin: 0;
+}
+
 .clearfix:after{
     display: table;
     content: "";
@@ -18,8 +22,7 @@ Version: 0.1
 
 /* Mise en page des lignes */
 .units-row{
-    max-width: 960px;
-    padding: 0 15px;
+    max-width: 1150px;
     margin: 0 auto 1.5rem auto;
 }
 
@@ -40,6 +43,9 @@ body > header h1 a{
 /* Barres des menus */
 .menu{
     background-color: #3498db;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .menu ul{
@@ -54,7 +60,7 @@ body > header h1 a{
 .menu a{
     display: block;
     color: #ecf0f1;
-    padding: 5px 10px;
+    padding: 14px 10px;
     text-decoration: none;
     transition: all 0.3s ease;
 }

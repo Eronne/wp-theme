@@ -11,7 +11,7 @@
         )); ?>
     </div>
 
-    <div class="unit-50">
+    <div class="col col-6">
         <?php
             if (function_exists('dynamic_sidebar')) {
                 dynamic_sidebar('pied-de-page');
@@ -19,8 +19,8 @@
         ?>
     </div>
 
-    <div class="copyright units-row">
-        <p class="unit-100"><?php bloginfo('description'); ?></p>
+    <div class="copyright">
+        <p class="col col-12"><?php bloginfo('description'); ?></p>
     </div>
 </footer>
 <?php wp_footer(); ?>
