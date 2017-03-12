@@ -16,12 +16,26 @@ Version: 0.1
 
 body{
     margin: 0;
-    background-color: #f7fbfc;
+    background-color: #F6F7F2;
+    color: #202020;
     font-family: 'Montserrat', sans-serif;
 }
 
 article{
     margin: 4% 0;
+}
+
+h1, h2, h3{
+    color: #202020;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 31px;
+}
+
+h2{
+    font-size: 26px;
 }
 
 p{
@@ -45,14 +59,15 @@ a:hover{
 }
 
 .shadow{
-    -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.18);
-    -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.18);
-    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.18);
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.25);
 }
 
 /* Mise en page des lignes */
 .units-row{
     max-width: 1150px;
+    padding: 0 12px;
     margin: 0 auto 1.5rem auto;
 }
 
@@ -72,7 +87,7 @@ body > header h1 a{
 /***** HEADER *****/
 /* Barres des menus */
 .menu{
-    background-color: #ECF0F1;
+    background-color: #e4e5e0;
     margin-bottom: 4%;
     display: flex;
     justify-content: flex-end;
@@ -90,7 +105,7 @@ body > header h1 a{
 
 .menu a{
     display: block;
-    color: #95A5A6;
+    color: #202020;
     padding: 14px 10px;
     text-decoration: none;
     transition: all 0.3s ease;

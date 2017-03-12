@@ -23,7 +23,7 @@
         
 
             <div class="units-row">
-                <h1 class="unit-100"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?> - Création de designs de qualité</a></h1>
+                <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?> - Création de designs de qualité</a></h1>
             </div>
 
             <div class="shadow">

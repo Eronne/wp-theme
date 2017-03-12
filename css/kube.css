@@ -195,7 +195,7 @@ h3 a, .h3 a,
 h4 a, .h4 a,
 h5 a, .h5 a,
 h6 a, .h6 a {
-  color: inherit; }
+  color: #202020; }
 
 p + h2,
 p + h3,
