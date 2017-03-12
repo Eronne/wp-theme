@@ -8,9 +8,8 @@
 
 
 <body <?php body_class(); ?>>
-    <div class="row">
+    <div class="row units-row">
         <header class="col col-12">
-            <img src="img/designco-logo.png" alt="Logo DesignCo">
             <?php wp_nav_menu(array(
                 'theme_location' => 'meta',
                 'container_class' => 'menu meta unit-100',
