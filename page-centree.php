@@ -7,7 +7,7 @@
 <?php get_header(); ?> <!-- Appel de l'entête -->
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
-        <main class="unit-70 centered">
+        <main class="unit-80 centered">
             <header>
                 <h2><?php the_title(); ?></h2>
             </header>

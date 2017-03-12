@@ -1,20 +1,14 @@
 <?php get_header(); ?> <!-- Appel de l'en-tête (fichier header.php) -->
 
-<main class="row-units">
-    <div class="row">
-        <div class="col col-12">
-        <h1>Rechercher :</h1>
-        <?php get_search_form() ?>
+<div class="row gutters">
+    <main id="articles" class="col col-8">
+        <?php if(have_posts()) : ?>
+            <div class="titre">
+                <?php the_archive_title(); ?>
+            </div>
+            <p><?php the_archive_description(); ?></p>
 
-        <h1>Articles récents :</h1>
-        <?php $requete = new WP_Query(array(
-            'post_type' => 'post',
-            'posts_per_page' => 3,
-            'ignore_sticky_posts' => true
-        )) ?>
-
-        <?php if ($requete->have_posts()) : ?>
-            <?php while($requete->have_posts()) : $requete->the_post(); ?>
+            <?php while(have_posts()) : the_post(); ?>
                 <article>
                     <header class="titre-article">
                         <h2>
@@ -27,10 +21,14 @@
                     <a href="<?php the_permalink(); ?>">Lire la suite</a>
                 </article>
             <?php endwhile; ?>
+
+            <?php the_posts_pagination(); ?>
         <?php endif; ?>
-        <?php wp_reset_query(); ?>
-    </div>
-    </div>
-</main>
+    </main>
+
+    <aside class="col col-4">
+        <?php get_sidebar(); ?> <!-- Appel de la sidebar (fichier sidebar.php) -->
+    </aside>
+</div>
 
 <?php get_footer(); ?> <!-- Appel du pied de page (fichier footer.php) -->

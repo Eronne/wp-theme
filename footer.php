@@ -11,7 +11,7 @@
         )); ?>
     </div>
 
-    <div class="col col-6">
+    <div class="units-row col col-12">
         <?php
             if (function_exists('dynamic_sidebar')) {
                 dynamic_sidebar('pied-de-page');

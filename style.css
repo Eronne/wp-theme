@@ -40,6 +40,7 @@ h2{
 
 p{
     font-weight: 300;
+    margin-bottom: 8px;
 }
 
 a{
@@ -67,7 +68,7 @@ a:hover{
 /* Mise en page des lignes */
 .units-row{
     max-width: 1150px;
-    padding: 0 12px;
+    padding: 0 15px;
     margin: 0 auto 1.5rem auto;
 }
 
@@ -198,6 +199,23 @@ article .navigation{
 
 .nav-links .page-numbers{
     display: inline-block;
+}
+
+
+
+
+
+/* SEARCH FORM */
+#s, #searchsubmit{
+    display: inline-block;
+}
+
+#s{
+    width: 30%;
+}
+
+#searchsubmit{
+
 }
 
 
