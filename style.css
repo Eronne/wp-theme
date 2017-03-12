@@ -16,12 +16,38 @@ Version: 0.1
 
 body{
     margin: 0;
+    background-color: #f7fbfc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+article{
+    margin: 4% 0;
+}
+
+p{
+    font-weight: 300;
+}
+
+a{
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover{
+    text-shadow: 0px 0px 4px rgba(150, 150, 150, 0.36);
 }
 
 .clearfix:after{
     display: table;
     content: "";
     clear: both;
+}
+
+.shadow{
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.18);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.18);
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.18);
 }
 
 /* Mise en page des lignes */
@@ -50,10 +76,6 @@ body > header h1 a{
     margin-bottom: 4%;
     display: flex;
     justify-content: flex-end;
-
-    -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.18);
-    -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.18);
-    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.18);
 }
 
 .menu ul{
@@ -82,7 +104,7 @@ body > header h1 a{
 /* Logo DesignCo */
 #menu-item-48 > a{
     padding: 0;
-    margin: 8px 0 0 8px;
+    margin: 8px 0 0 10px;
 }
 
 #menu-item-48 > a:hover{
@@ -110,7 +132,7 @@ a > .designco-logo{
 }
 
 .single article header{
-    border: 3px solid #3498db;
+    border: 3px solid #E74C3C;
     text-align: center;
     padding: 50px 0;
     margin-bottom: 20px;
@@ -126,13 +148,13 @@ a > .designco-logo{
 }
 
 article .meta{
-    border-top: 3px solid #3498db;
+    border-top: 3px solid #E74C3C;
     font-size: 0.75rem;
     padding-top: 5px;
 }
 
 article .navigation{
-    background-color: #3498db;
+    background-color: #ECF0F1;
     padding: 5px 10px;
 }
 
@@ -175,7 +197,9 @@ nav.piedpage ul{
 }
 
 .copyright{
-    border-top: 5px solid #3498db;
+    margin-top: 4%;
+    padding-top: 2%;
+    border-top: 5px solid #E74C3C;
     font-size: 0.7rem;
     text-align: center;
 }

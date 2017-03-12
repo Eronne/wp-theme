@@ -19,7 +19,7 @@
         ?>
     </div>
 
-    <div class="copyright">
+    <div class="copyright units-row">
         <p class="col col-12"><?php bloginfo('description'); ?></p>
     </div>
 </footer>

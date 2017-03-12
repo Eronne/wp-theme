@@ -26,7 +26,7 @@
                 <?php edit_post_link(); ?>
             </div>
 
-            <div class="navigation clearfix">
+            <div class="navigation clearfix shadow">
                 <?php the_post_navigation(); ?>
             </div>
         </article>
