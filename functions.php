@@ -80,7 +80,7 @@
 
     function montheme_personnaliser_css(){ ?>
         <style type="text/css">
-            body > header{
+            body > .row > header{
                 background-image: url(<?php echo get_theme_mod('charge_image', 'none'); ?>);
                 height: <?php echo (get_theme_mod('charge_image')!=='' ? '250px' : 'auto'); ?>;
             }
